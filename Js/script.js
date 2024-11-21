@@ -5,6 +5,15 @@ const themeBtn = document.querySelector('#theme-btn')
 const body = document.querySelector('body')
 const getAllDividers = document.querySelectorAll('.divider')
 
+function scrollToProjects() {
+    const target = document.getElementById('section-projects');
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+
+
 function handleElementsOnClick(elements, eventType, callbackFunc) {
   for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener(eventType, callbackFunc);
